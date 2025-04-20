@@ -18,11 +18,11 @@ export default function Home() {
             href="/"
             className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent animate-gradient-x"
           >
-            ELEGANCE
+            StyleScape
           </Link>
           <div className="relative inline-block group">
-      <span className="button-border pointer-events-none absolute inset-0 rounded-md z-0"></span>
-    </div>
+            <span className="button-border pointer-events-none absolute inset-0 rounded-md z-0"></span>
+          </div>
           <nav className="hidden md:flex items-center space-x-8">
             {['New Arrivals', 'Collections', 'About', 'Contact'].map((item) => (
               <Link
@@ -48,13 +48,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-24 md:pt-0 relative h-screen flex items-center">
         <div className="absolute inset-0 z-0">
-        <iframe
-  src="https://www.youtube.com/embed/LmZx9it1268?autoplay=1&mute=1&controls=0&loop=1&playlist=LmZx9it1268"
-  className="w-full h-full object-cover brightness-75"
-  frameBorder="0"
-  allow="autoplay; encrypted-media"
-  allowFullScreen
-></iframe>
+          <video
+            src="/videos/AIvideo.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover brightness-75"
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
         </div>
 
@@ -65,23 +66,25 @@ export default function Home() {
               Discover our new collection that blends timeless elegance with contemporary fashion trends.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
+              <a href="https://v0-stunning-style-scape-ui-y8.vercel.app/">
               <Button size="lg" className="bg-gradient-to-r from-pink-400 via-red-500 to-yellow-500 text-white hover:brightness-110 shadow-xl">
                 Get Start
               </Button>
-              <Button
+              </a>
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="text-white border-white hover:bg-white/10 hover:backdrop-blur-sm transition"
               >
                 Explore Brand
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
       </section>
 
       {/* New Arrivals */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between mb-12">
             <h2 className="text-3xl font-bold">New Arrivals</h2>
@@ -92,23 +95,23 @@ export default function Home() {
 
           <FeaturedProducts />
         </div>
-      </section>
+      </section> */}
 
       {/* Brand Story */}
-      <BrandStory />
+      {/* <BrandStory /> */}
 
       {/* Testimonials */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* Newsletter */}
-      <Newsletter />
+      {/* <Newsletter /> */}
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">ELEGANCE</h3>
+              <h3 className="text-xl font-bold mb-4">StyleScape</h3>
               <p className="text-gray-400 mb-4">
                 Redefining fashion with timeless elegance and contemporary style since 2010.
               </p>
